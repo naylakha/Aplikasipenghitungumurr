@@ -188,8 +188,7 @@ public class aplikasipenghitungU extends javax.swing.JFrame {
 Date tanggalLahir = jCalendarComboBox1.getDate();
 if (tanggalLahir != null) {
 // Menghitung umur dan hari ulang tahun berikutnya
-LocalDate lahir =
-tanggalLahir.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
+LocalDate lahir = tanggalLahir.toInstant().atZone(ZoneId.systemDefault()).toLocalDate();
 LocalDate sekarang = LocalDate.now();
 String umur = helper.hitungUmurDetail(lahir, sekarang);
 jTextField1.setText(umur);
