@@ -26,8 +26,7 @@ return period.getYears() + " tahun, " + period.getMonths() + "bulan, " + period.
 public LocalDate hariUlangTahunBerikutnya(LocalDate lahir, LocalDate
 sekarang) {
 LocalDate ulangTahunBerikutnya = lahir.withYear(sekarang.getYear());
-if (!ulangTahunBerikutnya.isAfter(sekarang)) {
-ulangTahunBerikutnya = ulangTahunBerikutnya.plusYears(1);
+if (!ulangTahunBerikutnya.isAfter(sekarang)) {ulangTahunBerikutnya = ulangTahunBerikutnya.plusYears(1);
 }
 return ulangTahunBerikutnya;
 }
